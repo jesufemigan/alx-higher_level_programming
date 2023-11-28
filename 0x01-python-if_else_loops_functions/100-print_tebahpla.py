@@ -5,5 +5,5 @@ for i in range(0, 26):
         new = start
     else:
         new = start - 32
-    print(chr(new), end="")
+    print("{}".format(chr(new)), end="")
     start -= 1
