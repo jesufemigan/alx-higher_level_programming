@@ -6,3 +6,4 @@ def uppercase(str):
         else:
             new_name = ord(ch)
         print("{}".format(chr(new_name)), end="")
+    print()
