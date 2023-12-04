@@ -8,7 +8,7 @@
  * Return: the reversed list
  */
 
-listint_t reverse_list(listint_t *llist)
+listint_t *reverse_list(listint_t *llist)
 {
 	listint_t *prev = NULL, *current = llist, *next;
 
@@ -32,18 +32,19 @@ listint_t reverse_list(listint_t *llist)
 
 int is_palindrome(listint_t **head)
 {
-	if (head == NULL || head->next == NULL)
+	if (*head == NULL || (*head)->next == NULL)
 		return (1);
 
-	listint_t *slow = head, *fast = head;
+	listint_t *slow = *head, *fast = *head;
+	listint_t *second_part, *first_part;
 
 	while (fast->next && fast->next->next)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
 	}
-	listint_t second_part = reverse_list(slow->next);
-	listint_t first_part = head;
+	second_part = reverse_list(slow->next);
+	first_part = *head;
 
 	while (second_part)
 	{
