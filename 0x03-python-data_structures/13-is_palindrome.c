@@ -54,5 +54,4 @@ int is_palindrome(listint_t **head)
 		second_part = second_part->next;
 	}
 	return (1);
-
 }
