@@ -23,9 +23,9 @@ class Rectangle:
         Prints the shaped form of the rectangle using #
         """
         shaped_rectangle = ''
-        if self.__width != 0 or self.__height != 0:
+        if self.__width != 0 and self.__height != 0:
             shaped_rectangle += '\n'.join('#' * self.__width for j in
-                    range(self.__height))
+                                          range(self.__height))
         return shaped_rectangle
 
     @property
