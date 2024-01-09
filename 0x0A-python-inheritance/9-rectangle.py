@@ -18,8 +18,8 @@ class Rectangle(BaseGeometry):
 
     def __print__(self):
         """prints the description of rectangle"""
-        print(f"[Rectangle] {self.__width}/{self.__height}")
+        print(f"[Rectangle] {str(self.__width)}/{str(self.__height)}")
 
     def __str__(self):
         """returns the description of rectangle"""
-        return f"[Rectangle] {self.__width}/{self.__height}"
+        return f"[Rectangle] {str(self.__width)}/{(self.__height)}"
