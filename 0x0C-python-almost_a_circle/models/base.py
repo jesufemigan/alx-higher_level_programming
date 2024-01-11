@@ -3,8 +3,10 @@
 
 
 class Base:
+    '''A class Base which is the base for all other classes'''
     __nb_objects = 0
     def __init__(self, id=None):
+        '''Constructor'''
         if id is not None:
             self.id = id
         else:

@@ -3,7 +3,8 @@
 
 
 import unittest
+Base = __import__('base').Base
 
 
 class TestBase(unittest.TestCase):
-
+    
