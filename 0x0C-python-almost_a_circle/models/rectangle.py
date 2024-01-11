@@ -80,3 +80,17 @@ class Rectangle(Base):
         '''writes [Rectangle] (<id>) <x>/<y> - <width>/<height>'''
         return f"[Rectangle] ({str(self.id)}) {str(self.__x)}/{str(self.__y)} \
 - {str(self.__width)}/{str(self.__height)}"
+
+    def update(self, *args):
+        '''update the class rectangle'''
+        for i, arg in enumerate(args):
+            if i == 0:
+                self.id = arg
+            elif i == 1:
+                self.__width = arg
+            elif i == 2:
+                self.__height = arg
+            elif i == 3:
+                self.__x = arg
+            elif i == 4:
+                self.__y = arg
