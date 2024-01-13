@@ -111,3 +111,8 @@ class Rectangle(Base):
                     self.__x = kwargs[key]
                 elif key == 'y':
                     self.__y = kwargs[key]
+
+    def to_dictionary(self):
+        '''returns dictionary representation of Rectangle'''
+        return {key.lstrip('_Rectangle__'): value for key, value in
+                vars(self).items()}
