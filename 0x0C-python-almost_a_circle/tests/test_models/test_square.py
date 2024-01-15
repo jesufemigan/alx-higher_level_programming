@@ -50,4 +50,3 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(self.my_update_sqr_2.x, 8)
         self.assertEqual(self.my_update_sqr_2.y, 4)
         self.assertEqual(self.my_update_sqr_2.id, 99)
-
