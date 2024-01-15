@@ -38,3 +38,15 @@ class Base:
         if json_string is None or not json_string:
             return []
         return loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        '''create new class'''
+        if cls is Rectangle:
+            my_class = Rectangle(2, 3)
+        elif cls is Square:
+            my_class = Square(8)
+        else:
+            my_class = None
+        my_class.update(**dictionary)
+        return my_class
