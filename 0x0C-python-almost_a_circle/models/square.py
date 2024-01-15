@@ -13,8 +13,8 @@ class Square(Rectangle):
 
     def __str__(self):
         '''the string to return when we print the square class'''
-        return f"[{type(self).__name__}] ({str(self.id)}) {str(self.x)}/{str(self.y)} \
-- {str(self.width)}"
+        return f"[{type(self).__name__}] ({str(self.id)}) {str(self.x)}/\
+{str(self.y)} - {str(self.width)}"
 
     @property
     def size(self):
