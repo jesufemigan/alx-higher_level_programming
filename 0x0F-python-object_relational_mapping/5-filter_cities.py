@@ -11,9 +11,8 @@ if __name__ == '__main__':
     cur = db.cursor()
     cur.execute("""SELECT c.name
                 FROM cities c INNER JOIN states s
-                ON c.state_id = s.id
-                WHERE s.name LIKE %s
-                GROUP BY c.name
+                ON s.id = c.state_id
+                WHERE s.name = %s
                 ORDER BY c.id""", [sys.argv[4]])
 
     rows = cur.fetchall()
