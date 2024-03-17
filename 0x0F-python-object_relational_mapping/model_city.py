@@ -4,6 +4,7 @@
 from model_state import Base, State
 from sqlalchemy import Column, String, Integer, ForeignKey
 
+
 class City(Base):
     '''a city class that inherits from base'''
     __tablename__ = "cities"
