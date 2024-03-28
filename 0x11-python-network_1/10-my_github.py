@@ -11,4 +11,4 @@ tpbWZYl7CZbd9TV9K35J4NSqXPH3ZQVIDM7qaeADP"
                "Authorization": token, "X-Github-Api-Version": "2022-11-28"}
     r = requests.get(url, headers=headers)
     user = r.json()
-    print(user['id'])
+    print(user.get('id'))
