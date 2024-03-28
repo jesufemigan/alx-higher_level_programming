@@ -17,5 +17,5 @@ Yl7CZbd9TV9K35J4NSqXPH3ZQVIDM7qaeADP"
     response = r.json()
 
     for commit in response:
-        print(f"{commit['commit']['tree']['sha']}:\
+        print(f"{commit['sha']}:\
  {commit['commit']['author']['name']}")
