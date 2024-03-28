@@ -9,6 +9,5 @@ if __name__ == '__main__':
         content_type = content.__class__
         utf8 = content.decode("utf-8")
 
-
     print(f'Body response:\n\t- type: {content_type}\n\t- content: \
     {content}\n\t- utf8 content: {utf8}')
